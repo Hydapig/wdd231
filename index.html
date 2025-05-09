@@ -10,40 +10,51 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <span>
-            <img src="images/mike profile pic.jpg" alt="profile picture">
+            <img src="images/mike-profile-pic.jpg" alt="profile picture">
             <h1>Michael O. Hyde</h1>
         </span>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">Final</a>
-            <a href="https://github.com/Hydapig">GitHub Profile</a>
-            <a href="http://www.linkedin.com/in/mike-hyde-355672112">LinkedIn</a>
-        </nav>
     </header>
+    <a id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="https://github.com/Hydapig">GitHub Profile</a></li>
+            <li><a href="http://www.linkedin.com/in/mike-hyde-355672112">LinkedIn</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>
+        <h1>Home</h1>
 
-        </h1>
-        <section class="course">
-            <h2>Course Work</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-        <section class="location">
-            <h2>Hyrum, Utah</h2>
-        </section>
-        <section class="certs">
-            <h2>Web and Computer Programming Certificate</h2>
-        </section>
+        <div class="grid-layout">
+            <section class="course">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="location">
+                <h2>Hyrum, Utah</h2>
+                <figure>
+                    <img src="images/Flag_of_Utah.svg.png" alt="state flag" loading="lazy">
+                    <figcaption> Utah State Flag</figcaption>
+                </figure>
+            </section>
+            <section class="certs">
+                <h2>Web and Computer Programming Certificate</h2>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>

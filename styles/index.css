@@ -1,0 +1,162 @@
+:root {
+    --primary: #034f84;
+    --secondary: #696969;
+    --text: black;
+    --text2: #cac4ce;
+    --secondary-text: #ebe9e9;
+    --background: #d3d3d3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: x-large;
+    background-color: var(--primary);
+    color: var(--text2);
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    float: left;
+    border-radius: 25%;
+}
+
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    color: var(--text);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default on small screens */
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation.show {
+    display: flex; /* Shown when menu toggled */
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    font-size: larger;
+    transition: 0.25s;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+main h1 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+main h2 {
+    background-color: var(--primary);
+    padding: 20px;
+    margin: 0;
+    border-radius: 8px;
+    color: var(--text2);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin: 0 auto;
+}
+
+.course,
+.location,
+.certs {
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    text-align: center;
+}
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 10px;
+    font-size: 14pt;
+    color: var(--text2);
+}
+
+@media (min-width: 700px) {
+    main div {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+
+        .certs {
+            grid-column: span 2;
+        }
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .navigation li {
+        display: block;
+    }
+}
