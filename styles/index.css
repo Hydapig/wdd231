@@ -25,7 +25,7 @@ header {
 header span {
     display: flex;
     align-items: center;
-    gap: 10px;
+    margin-left: 15px;
 }
 
 header img {
@@ -33,7 +33,8 @@ header img {
     height: auto;
     object-fit: cover;
     float: left;
-    border-radius: 25%;
+    border-radius: 25rem;
+    float: left;
 }
 
 
@@ -122,7 +123,7 @@ main h2 {
     border-radius: 8px;
     text-align: center;
 }
-}
+
 
 footer {
     text-align: center;
