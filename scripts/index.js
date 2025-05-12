@@ -94,7 +94,9 @@ const courses = [
 
 function filterCourses(courses) {
 	const container = document.getElementById('course-container');
+	const messages = document.getElementById('messages');
 	container.innerHTML = "";
+	messages.innerHTML = "";
 
 	let credits = 0;
 	let courseCount = 0;
@@ -102,6 +104,12 @@ function filterCourses(courses) {
 	courses.forEach(course => {
 		const card = document.createElement('div');
 		card.classList.add('course-card');
+
+		if (!course.completed) {
+			card.style.borderColor = 'red';
+			card.style.borderWidth = '2px';
+			card.style.borderStyle = 'solid';
+		}
 
 		const subject = document.createElement('p');
 		subject.textContent = `${course.subject}`;
@@ -127,8 +135,8 @@ function filterCourses(courses) {
 	creditAmount.textContent = `Number of credits: ${credits}`;
 	const totalCourses = document.createElement('p');
 	totalCourses.textContent = `Number of classes: ${courseCount}`;
-	container.prepend(creditAmount);
-	container.prepend(totalCourses);
+	messages.appendChild(creditAmount);
+	messages.appendChild(totalCourses);
 }
 
 filterCourses(courses);

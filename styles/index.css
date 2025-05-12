@@ -2,7 +2,7 @@
     --primary: #034f84;
     --secondary: #696969;
     --text: black;
-    --text2: #cac4ce;
+    --text2: #EBEAEB;
     --secondary-text: #ebe9e9;
     --background: #d3d3d3;
 }
@@ -64,14 +64,12 @@ header img {
     padding: 0;
     margin: 0;
     display: none;
-    /* Hidden by default on small screens */
     flex-direction: column;
     align-items: center;
 }
 
 .navigation.show {
     display: flex;
-    /* Shown when menu toggled */
 }
 
 .navigation li {
@@ -109,6 +107,8 @@ main h2 {
     padding: 20px;
     margin: 0;
     border-radius: 8px;
+    font-weight:500;
+    font-size: x-large;
     color: var(--text2);
 }
 
@@ -127,6 +127,41 @@ main h2 {
     text-align: center;
 }
 
+.filters {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.filters button {
+    background-color: var(--primary);
+    color: var(--text2);
+    padding: 10px;
+}
+
+.messages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 0 auto;
+
+}
+
+.course-card {
+    display:flex;
+    border: solid 2px var(--primary);
+    border-radius: .5rem;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+
+}
 
 footer {
     text-align: center;
@@ -138,7 +173,7 @@ footer {
 }
 
 @media (min-width: 700px) {
-    main div {
+    .grid-layout {
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         justify-content: center;
@@ -147,6 +182,18 @@ footer {
 
     .certs {
         grid-column: span 2;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(auto-fill, 300px);
+        /* grid-gap: 30px; */
+        margin: 0 auto;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .course-card {
+        max-width: 300px;
     }
 
     #menu {
