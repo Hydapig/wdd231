@@ -131,6 +131,13 @@ main h2 {
     text-align: center;
 }
 
+.location img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .filters {
     margin-top: 15px;
     display: flex;
@@ -162,7 +169,7 @@ main h2 {
     border: solid 2px var(--primary);
     border-radius: .5rem;
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
     text-align: center;
     justify-content: center;
 
@@ -190,7 +197,7 @@ footer {
     }
 
     .course-list {
-        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         /* grid-gap: 30px; */
         margin: 0 auto;
         justify-content: center;
