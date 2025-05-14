@@ -7,6 +7,10 @@
     --background: #d3d3d3;
 }
 
+html {
+    max-width: 500px;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -173,6 +177,10 @@ footer {
 }
 
 @media (min-width: 700px) {
+    html {
+        max-width: 2500px;
+    }
+    
     .grid-layout {
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
