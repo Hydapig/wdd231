@@ -1,0 +1,28 @@
+{
+    "family_name": "Davidson",
+    "move_in_date": "2025-5-18",
+    "number_of_people": 4,
+    "visited_by_bishopric": "true",
+    "family_members": [
+        {
+            "name": "Mark",
+            "gender": "Male",
+            "birthdate": "1987-05-27"
+        },
+        {
+            "name": "Mary",
+            "gender": "Female",
+            "birthdate": "1988-06-12"
+        },
+        {
+            "name": "Mavis",
+            "gender": "Female",
+            "birthdate": "2015-08-26"
+        },
+        {
+            "name": "Joseph",
+            "gender": "Male",
+            "birthdate": "2018-03-13"
+        }
+    ]
+}
