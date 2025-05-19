@@ -4,7 +4,7 @@ const formattedDate = date.toLocaleString('en-US', { timeZoneName: 'short' });
 document.getElementById('year').innerHTML = year
 document.getElementById('lastModified').innerHTML = formattedDate
 
-const mainnav = document.querySelector('.navigation');
+const mainnav = document.querySelector('#animate');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {

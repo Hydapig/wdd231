@@ -77,12 +77,12 @@ ul.navigation {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    /* display: none; */
 }
 
-ul.navigation.open {
+/* ul.navigation.open {
     display: block;
-}
+} */
 
 .navigation li {
     display: block;
@@ -105,9 +105,10 @@ ul.navigation li a {
     text-decoration: underline;
 }
 
-/* nav {
+nav {
     display: grid;
     grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
 nav ul {
@@ -116,7 +117,7 @@ nav ul {
 
 nav.open {
     grid-template-rows: 1fr;
-} */
+}
 
 ul.navigation li.active a {
     background-color: rgba(0,0,0,0.2);
@@ -249,5 +250,9 @@ footer {
 
     .navigation li {
         display: block;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
     }
 }
