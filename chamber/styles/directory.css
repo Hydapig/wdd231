@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3C545C;
-    --secondary-color: #713326;
+    --secondary-color: #1E3946;
     --background: #FCF9F3;
     --text: #FEF9F3;
     --border: #BC6C25;
@@ -92,14 +92,6 @@ ul.navigation {
     display: block;
 }
 
-/* ul.navigation a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    display: block;
-} */
-
 .navigation a:hover {
     text-decoration: underline;
 }
@@ -128,4 +120,40 @@ ul.navigation li.active a {
 
 main {
     margin: 0 auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* text-align: left; */
+    align-items:end;
+    justify-content: baseline;
+    gap: 15px;
+    /* padding: 1.5rem 2vw; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-info, .dev-info {
+    justify-self: center;
+    text-align: left;
+    margin-left: 16px;
+    width: 100%
+}
+
+.contact-info p, .dev-info p {
+    margin: 0 0 8px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.social-links img {
+    width: 44px;
+    height: auto;
 }
