@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #3C545C;
+    --secondary-color: #713326;
+    --background: #FCF9F3;
+    --text: #FEF9F3;
+    --border: #BC6C25;
+    --font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text)
+}
+
+header {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    /* padding: 0.5rem 2vw; */
+    column-gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header img.site-icon {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    padding: 10px;
+}
+
+header span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+header span h1 {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+header span p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    font-size: x-large;
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 4vw;
+}
+
+ul.navigation {
+    list-style: none;
+    background-color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navigation li, a {
+    padding: 1rem;
+    text-align: center;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+}
+
+/* ul.navigation a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+} */
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: grid;
+    position: sticky;
+    grid-template-rows: 0fr;
+    width: 100%;
+    grid-column: 1 /-1;
+    box-sizing: border-box;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.navigation li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+main {
+    margin: 0 auto;
+}
