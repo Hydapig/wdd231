@@ -1,0 +1,65 @@
+{
+    {
+        "name": "Clear Glass Installation",
+        "address": "124 Crystal View Ln",
+        "city": "Hyrum",
+        "phone": "(435) 555-1234",
+        "website": "https://www.clearglassco.com",
+        "image": "https://placehold.co/300x200?text=Clear+Glass",
+        "membership": 2
+    },
+    {
+        "name": "The Corner Store",
+        "address": "88 Main Street",
+        "city": "Hyrum",
+        "phone": "(435) 555-7890",
+        "website": "https://www.cornerstorehyrum.com",
+        "image": "https://placehold.co/300x200?text=Corner+Store",
+        "membership": 1
+    },
+    {
+        "name": "Hyrum Dentistry",
+        "address": "202 Smile Ave",
+        "city": "Hyrum",
+        "phone": "(435) 555-3567",
+        "website": "https://www.hyrumdentistry.com",
+        "image": "https://placehold.co/300x200?text=Hyrum+Dentistry",
+        "membership": 3
+    },
+    {
+        "name": "Smith Farms",
+        "address": "700 Harvest Rd",
+        "city": "Hyrum",
+        "phone": "(435) 555-9981",
+        "website": "https://www.smithfarmsutah.com",
+        "image": "https://placehold.co/300x200?text=Smith+Farms",
+        "membership": 1
+    },
+    {
+        "name": "The Food Shack",
+        "address": "321 Picnic Blvd",
+        "city": "Hyrum",
+        "phone": "(435) 555-4321",
+        "website": "https://www.foodshackhyrum.com",
+        "image": "https://placehold.co/300x200?text=Food+Shack",
+        "membership": 2
+    },
+    {
+        "name": "Mike's Auto Repair",
+        "address": "55 Grease Monkey Ln",
+        "city": "Hyrum",
+        "phone": "(435) 555-6789",
+        "website": "https://www.mikesautorepair.com",
+        "image": "https://placehold.co/300x200?text=Mike's+Auto",
+        "membership": 1
+    },
+    {
+        "name": "Farmer John's Rentals",
+        "address": "900 Tractor Way",
+        "city": "Hyrum",
+        "phone": "(435) 555-2070",
+        "website": "https://www.farmerjohnsrentals.com",
+        "image": "https://placehold.co/300x200?text=Farmer+John's",
+        "membership": 2
+    }
+}
