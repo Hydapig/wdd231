@@ -1,4 +1,4 @@
-{
+[
     {
         "name": "Clear Glass Installation",
         "address": "124 Crystal View Ln",
@@ -62,4 +62,4 @@
         "image": "https://placehold.co/300x200?text=Farmer+John's",
         "membership": 2
     }
-}
+]
