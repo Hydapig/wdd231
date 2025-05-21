@@ -62,7 +62,6 @@ const displayMembers = (members, view = "grid") => {
 		url.target = "_blank";
 		membership.textContent = `Membership Level: ${membershipLevels[member.membership] || "Unknown"}`;
 
-		// card.classList.add('member-list');
 		card.appendChild(logo);
 		card.appendChild(name);
 		card.appendChild(location);
@@ -105,7 +104,6 @@ getMemberData()
 
 const gridView = document.querySelector('#grid-view');
 const listView = document.querySelector('#list-view');
-// const memberList = document.querySelector('#member-list')
 
 gridView.addEventListener('click', () => {
   displayMembers(membersData, 'grid');

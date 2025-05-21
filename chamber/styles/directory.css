@@ -33,19 +33,19 @@ header img.site-icon {
     padding: 10px;
 }
 
-header span {
+header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
 
-header span h1 {
+header div h1 {
     margin: 15px 0;
     font-weight: 500;
 }
 
-header span p {
+header div p {
     margin: 0;
     font-weight: 400;
     font-size: 0.9rem;
@@ -120,7 +120,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     align-items:end;
-    justify-content: baseline;
     gap: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -246,11 +245,6 @@ footer {
         width: auto;
     }
 
-    /* nav ul {
-        display: flex;
-        justify-content: flex-end;
-    } */
-
     ul.navigation, ul.navigation.open {
         display: flex;
         justify-content: space-between;
@@ -272,10 +266,6 @@ footer {
     footer {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: left;
-    }
-
-    .contact-info,
-    .dev-info {
-        margin: 0;
+        align-items: center;
     }
 }
