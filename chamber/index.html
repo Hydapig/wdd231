@@ -7,95 +7,73 @@
     <meta name="description" content="WDD 231 chamber of commerce home page">
     <meta name="author" content="Mike Hyde">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/directory.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Chamber of Commerce">
-    <meta property="og:description" content="A description.">
-    <meta property="og:image" content="https://placehold.co/44x44">
-    <meta property="og:url" content="https://hydapig.github.io/wdd231/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Hyrum Chamber of Commerce Directory">
+    <meta property="og:description" content="Directory for the Hyrum Chamber of Commerce">
+    <meta property="og:image" content="https://hydapig.github.io/wdd231/chamber/images/hyrum-chamber-logo.webp">
+    <meta property="og:url" content="https://hydapig.github.io/wdd231/chamber/directory.html">
 </head>
 <body>
     <header>
-        <img src="https://placehold.co/44x44" alt="placeholder">
-        <span>Timbuktu<p>Chamber of Commerce</p></span>
-        <button id="menuButton"></button>
+        <img src="images/hyrum-chamber-logo.webp" width="90" height="90" alt="Hyrum Chamber Logo" class="site-icon" loading="lazy">
+        <div><h1>Hyrum</h1><p>Chamber of Commerce</p></div>
+        <button id="menuButton" class="menu-button"></button>
         <nav id="animateMenu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-        <div>
-            <img src="https://placehold.co/44x44" alt="placeholder">
-        </div>
     </header>
     <main>
-        <section>
-            <img src="https://placehold.co/600x400" alt="hero image">
-            <button id="ticketsButton">Keynote Tickets</button>
+        <section class="hero">
+            <img src="https://placehold.co/900x400" alt="hero image">
+            <button class="register-button">Join Us</button>
         </section>
-        <h1>Home</h1>
-        <div class="first-container">
-            <div class="events">
-                <h2>Events</h2>
+        <h2>Home</h2>
+        <section class="section1">
+            <div class="container" id="events">
+                <h3>Events</h3>
             </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
+            <div class="container" id="current-weather">
+                <h3>Current Weather</h3>
             </div>
-            <div class="forcast">
-                <h2>Weather Forecast</h2>
-            </div>
-        </div>
-        <section>
-            <div class="biz1">
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <div>
-                    <img src="https://placehold.co/100x100" alt="picture">
-                    <p><strong>Email:</strong> info@gmail.com</p>
-                    <p><strong>Phone:</strong> 800-555-1234</p>
-                    <p><strong>URL:</strong> mybusiness.com</p>
-                </div>
-            </div>
-            <div class="biz2">
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <div>
-                    <img src="" alt="picture">
-                    <p><strong>Email:</strong> info@gmail.com</p>
-                    <p><strong>Phone:</strong> 800-555-1234</p>
-                    <p><strong>URL:</strong> mybusiness.com</p>
-                </div>
-            </div>
-            <div class="biz3">
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <div>
-                    <img src="" alt="picture">
-                    <p><strong>Email:</strong> info@gmail.com</p>
-                    <p><strong>Phone:</strong> 800-555-1234</p>
-                    <p><strong>URL:</strong> mybusiness.com</p>
-                </div>
+            <div class="container" id="forcast">
+                <h3>Weather Forcast</h3>
             </div>
         </section>
+        <section id="business-cards"></section>
     </main>
     <footer>
-        <div>
-            <h3>Timbuktu Chamber of Commerce</h3>
-            <p>address</p>
-            <p>email</p>
-            <p>phone#</p>
+        <div class="contact-info">
+            <h3><strong>Hyrum Chamber of Commerce</strong></h3>
+            <p>55 E Main St</p>
+            <p>Hyrum, Utah 84319</p>
+            <p>contact@hcc.net</p>
+            <p>(435) 123-4567</p>
         </div>
-        <div>social media links</div>
-        <div>
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/youtube-logo.webp" alt="youtube">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-64.jpeg" alt="X">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/circle-linkedin.webp" alt="linkedin">
+            </a>
+        </div>
+        <div class="dev-info">
             <p>WDD231 Class Project</p>
             <p>Mike Hyde</p>
-            <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+            <p>&copy; <span id="year"></span> Hyrum Chamber of Commerce</p>
             <p>last modified: <span id="lastModified"></span></p>
         </div>
     </footer>
