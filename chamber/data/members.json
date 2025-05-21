@@ -6,7 +6,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-1234",
             "website": "https://www.clearglassco.com",
-            "image": "https://placehold.co/300x200?text=Clear+Glass",
+            "image": "./images/cgi-icon.png",
             "membership": 2
         },
         {
@@ -15,7 +15,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-7890",
             "website": "https://www.cornerstorehyrum.com",
-            "image": "https://placehold.co/300x200?text=Corner+Store",
+            "image": "./images/store-icon.png",
             "membership": 1
         },
         {
@@ -24,7 +24,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-3567",
             "website": "https://www.hyrumdentistry.com",
-            "image": "https://placehold.co/300x200?text=Hyrum+Dentistry",
+            "image": "./images/dentist-icon.png",
             "membership": 3
         },
         {
@@ -33,7 +33,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-9981",
             "website": "https://www.smithfarmsutah.com",
-            "image": "https://placehold.co/300x200?text=Smith+Farms",
+            "image": "./images/farm-icon.png",
             "membership": 1
         },
         {
@@ -42,7 +42,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-4321",
             "website": "https://www.foodshackhyrum.com",
-            "image": "https://placehold.co/300x200?text=Food+Shack",
+            "image": "./images/food-icon.png",
             "membership": 2
         },
         {
@@ -51,7 +51,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-6789",
             "website": "https://www.mikesautorepair.com",
-            "image": "https://placehold.co/300x200?text=Mike's+Auto",
+            "image": "./images/car-icon.png",
             "membership": 1
         },
         {
@@ -60,7 +60,7 @@
             "city": "Hyrum",
             "phone": "(435) 555-2070",
             "website": "https://www.farmerjohnsrentals.com",
-            "image": "https://placehold.co/300x200?text=Farmer+John's",
+            "image": "./images/rental-icon.png",
             "membership": 2
         }
     ]

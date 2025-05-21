@@ -75,23 +75,11 @@ const displayMembers = (members, view = "grid") => {
 }
 
 const displayMembersTable = (members) => {
-	function mapMembershipLevel(level) {
-		return level === 1 ? "Member" : level === 2 ? "Silver" : "Gold";
-	}
-	
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const tbody = document.createElement('tbody');
 
-    thead.innerHTML = `
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Website</th>
-            <th>Membership</th>
-        </tr>
-    `;
+    thead.innerHTML = ``;
 
     members.forEach(member => {
         const tr = document.createElement('tr');
@@ -99,8 +87,7 @@ const displayMembersTable = (members) => {
             <td>${member.name}</td>
             <td>${member.address}, ${member.city}</td>
             <td>${member.phone}</td>
-            <td><a href="${member.website}" target="_blank">${member.website}</a></td>
-            <td>${mapMembershipLevel(member.membership)}</td>
+            <td><a href="${member.website}" target="_blank">Website</a></td>
         `;
         tbody.appendChild(tr);
     });

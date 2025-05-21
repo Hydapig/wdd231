@@ -22,7 +22,6 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    /* padding: 0.5rem 2vw; */
     column-gap: 0.5rem;
     width: 100%;
     box-sizing: border-box;
@@ -99,17 +98,11 @@ ul.navigation {
 
 nav {
     display: grid;
-    /* position: sticky; */
     grid-template-rows: 0fr;
     width: 100%;
     grid-column: 1 /-1;
-    /* box-sizing: border-box; */
     transition: grid-template-rows 0.5s ease-out;
 }
-
-/* nav ul {
-    overflow: hidden;
-} */
 
 nav.open {
     grid-template-rows: 1fr;
@@ -185,7 +178,7 @@ footer {
 }
 
 .grid-view img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
@@ -199,8 +192,16 @@ footer {
     padding: 4px 0 8px 0;
 }
 
+.list-view {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
 .list-view table {
     width: 100%;
+    min-width: 350px;
     border-collapse: collapse;
     max-width: 900px;
     margin: 0 auto;
@@ -264,7 +265,7 @@ footer {
         text-align: left;
     }
     .grid-view {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, 350px);
         max-width: 90%;
     }
 

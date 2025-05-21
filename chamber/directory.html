@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="images/hyrum-chamber-logo.webp" width="90" height="90" alt="Hyrum Chamber Logo" class="site-icon">
+        <img src="images/hyrum-chamber-logo.webp" width="90" height="90" alt="Hyrum Chamber Logo" class="site-icon" loading="lazy">
         <span><h1>Hyrum</h1><p>Chamber of Commerce</p></span>
         <button id="menuButton" class="menu-button"></button>
         <nav id="animateMenu">
@@ -34,8 +34,8 @@
     </header>
     <main>
         <div class="filters">
-            <button id="grid-view">Card View</button>
-            <button id="list-view">List View</button>
+            <input id="grid-view" type="image" src="images/grid-icon.webp" alt="grid" loading="lazy"   ></button>
+            <input id="list-view" type="image" src="images/list-icon.webp" alt="list" loading="lazy"></button>
         </div>
         <div id="member-list" class="grid-view"></div>
     </main>
