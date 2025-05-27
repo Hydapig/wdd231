@@ -5,7 +5,8 @@
             "address": "124 Crystal View Ln",
             "city": "Hyrum",
             "phone": "(435) 555-1234",
-            "website": "https://www.clearglassco.com",
+            "website": "clearglassco.com",
+            "email": "info@clearglassco.com",
             "image": "./images/cgi-icon.png",
             "membership": 2
         },
@@ -14,7 +15,8 @@
             "address": "88 Main Street",
             "city": "Hyrum",
             "phone": "(435) 555-7890",
-            "website": "https://www.cornerstorehyrum.com",
+            "website": "cornerstorehyrum.com",
+            "email": "info@cornerstorehyrum.com",
             "image": "./images/store-icon.png",
             "membership": 1
         },
@@ -23,7 +25,8 @@
             "address": "202 Smile Ave",
             "city": "Hyrum",
             "phone": "(435) 555-3567",
-            "website": "https://www.hyrumdentistry.com",
+            "website": "hyrumdentistry.com",
+            "email": "info@hyrumdentistry.com",
             "image": "./images/dentist-icon.png",
             "membership": 3
         },
@@ -32,7 +35,8 @@
             "address": "700 Harvest Rd",
             "city": "Hyrum",
             "phone": "(435) 555-9981",
-            "website": "https://www.smithfarmsutah.com",
+            "website": "smithfarmsutah.com",
+            "email": "info@smithfarmsutah.com",
             "image": "./images/farm-icon.png",
             "membership": 1
         },
@@ -41,7 +45,8 @@
             "address": "321 Picnic Blvd",
             "city": "Hyrum",
             "phone": "(435) 555-4321",
-            "website": "https://www.foodshackhyrum.com",
+            "website": "foodshackhyrum.com",
+            "email": "info@foodshackhyrum.com",
             "image": "./images/food-icon.png",
             "membership": 2
         },
@@ -50,16 +55,18 @@
             "address": "55 Grease Monkey Ln",
             "city": "Hyrum",
             "phone": "(435) 555-6789",
-            "website": "https://www.mikesautorepair.com",
+            "website": "mikesautorepair.com",
+            "email": "info@mikesautorepair.com",
             "image": "./images/car-icon.png",
-            "membership": 1
+            "membership": 3
         },
         {
             "name": "Farmer John's Rentals",
             "address": "900 Tractor Way",
             "city": "Hyrum",
             "phone": "(435) 555-2070",
-            "website": "https://www.farmerjohnsrentals.com",
+            "website": "farmerjohnsrentals.com",
+            "email": "info@farmerjohnsrentals.com",
             "image": "./images/rental-icon.png",
             "membership": 2
         }
