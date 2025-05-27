@@ -8,7 +8,7 @@
     <meta name="author" content="Mike Hyde">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
@@ -44,9 +44,28 @@
             </div>
             <div class="container" id="current-weather">
                 <h3>Current Weather</h3>
+                <div class="weather-info">
+                    <div class="weather1">
+                        <img id="weather-icon" src="" alt="">
+                        <p id="current-temp"></p>
+                        <p id="description"></p>
+                    </div>
+                    <div class="weather2">
+                        <p id="high-temp"></p>
+                        <p id="low-temp"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div>
             </div>
-            <div class="container" id="forcast">
-                <h3>Weather Forcast</h3>
+            <div class="container" id="forecast">
+                <h3>Weather Forecast</h3>
+                <div class="forecast-data">
+                    <p id="current-day"></p>
+                    <p id="second-day"></p>
+                    <p id="third-day"></p>
+                </div>
             </div>
         </section>
         <section id="business-cards"></section>
