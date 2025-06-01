@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Hyde | WDD 231 | Join Hyrum Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 join Hyrum chamber of commerce home page">
+    <meta name="author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="module" src="scripts/index.mjs" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Join Hyrum Chamber of Commerce">
+    <meta property="og:description" content="Join the Hyrum Chamber of Commerce">
+    <meta property="og:image" content="https://hydapig.github.io/wdd231/chamber/images/hyrum-chamber-logo.webp">
+    <meta property="og:url" content="https://hydapig.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <img src="images/hyrum-chamber-logo.webp" width="90" height="90" alt="Hyrum Chamber Logo" class="site-icon" loading="lazy">
+        <div><h1>Hyrum</h1><p>Chamber of Commerce</p></div>
+        <button id="menuButton" class="menu-button"></button>
+        <nav id="animateMenu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>Membership Application Form</h2>
+            <form action="thanks.html" method="get" class="joinForm">
+                <fieldset>
+                    <label>First Name
+                        <input type="text" name="fname" id="name" required>
+                    </label>
+                    <label>Last Name
+                        <input type="text" name="lname" id="name" required>
+                    </label>
+                    <label>Title
+                        <input type="text" name="title" id="title">
+                    </label>
+                    <label>Email
+                        <input type="email" name="useremail" id="email" required>
+                    </label>
+                    <label>Phone Number
+                        <input type="tel" id="tel" name="tel">
+                    </label>
+                    <label>Organization
+                        <input type="text" name="businessName" id="businessName">
+                    </label>
+                    <label>Membership Level
+                        <select name="level" id="level" required>
+                            <option value="" disabled selected>Choose your level...</option>
+                        </select>
+                    </label>
+                    <label>Description
+                        <textarea name="description" id="description"></textarea>
+                    </label>
+                    <label>
+                        <input type="time" name="time" id="time" hidden>
+                    </label>
+                    <input type="submit" value="">
+                </fieldset>
+            </form>
+        </section>
+        <section id="section2">
+            <h2>Membership Levels</h2>
+            <div id="levelCards">
+                <div id="npml">
+                    <h3>Non Profit Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div id="bml">
+                    <h3>Bronze Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div id="sml">
+                    <h3>Silver Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+                <div id="gml">
+                    <h3>Gold Membership Level</h3>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h3><strong>Hyrum Chamber of Commerce</strong></h3>
+            <p>55 E Main St</p>
+            <p>Hyrum, Utah 84319</p>
+            <p>contact@hcc.net</p>
+            <p>(435) 123-4567</p>
+        </div>
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/youtube-logo.webp" alt="youtube">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-64.jpeg" alt="X">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/circle-linkedin.webp" alt="linkedin">
+            </a>
+        </div>
+        <div class="dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Mike Hyde</p>
+            <p>&copy; <span id="year"></span> Hyrum Chamber of Commerce</p>
+            <p>last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
