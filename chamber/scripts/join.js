@@ -14,9 +14,11 @@ const membershipInfo = document.querySelector("#levelDialog p");
 closeDialog.addEventListener("click", () => membershipDialog.close());
 
 function displayLevels(data) {
-    data.forEach(membership => {
+    data.forEach((membership, index) => {
         const level = document.createElement('div');
-        level.classList.add("membership-level")
+        level.classList.add("membership-level");
+        level.style.animationDelay = `${index * 150}ms`;
+
         level.innerHTML = `
         <h3>${membership.name} Membership Level</h3>
         <button class="animations">Learn More</button>
@@ -33,7 +35,7 @@ function membershipList(data) {
     data.forEach(membership => {
         const name = document.createElement('option');
         name.textContent = membership.name;
-        name.value = name;
+        name.value = membership.name;
 
         list.appendChild(name);
     });
@@ -61,3 +63,7 @@ function showLevels(x) {
     <ul>${benefitsList}</ul>
     `;
 }
+
+const timestampField = document.getElementById("timestamp");
+const now = new Date();
+timestampField.value = now.toLocaleString();
