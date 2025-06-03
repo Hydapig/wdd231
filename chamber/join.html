@@ -7,8 +7,8 @@
     <meta name="description" content="WDD 231 join Hyrum chamber of commerce home page">
     <meta name="author" content="Mike Hyde">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <script type="module" src="scripts/index.mjs" defer></script>
+    <link rel="stylesheet" href="styles/join.css">
+    <script type="module" src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     <main>
         <section id="section1">
             <h2>Membership Application Form</h2>
-            <form action="thanks.html" method="get" class="joinForm">
+            <form action="thanks.html" method="get" class="join">
                 <fieldset>
                     <label>First Name
                         <input type="text" name="fname" id="name" required>
@@ -43,17 +43,20 @@
                     <label>Last Name
                         <input type="text" name="lname" id="name" required>
                     </label>
-                    <label>Title
+                    <label>Job Title
                         <input type="text" name="title" id="title">
                     </label>
                     <label>Email
                         <input type="email" name="useremail" id="email" required>
                     </label>
                     <label>Phone Number
-                        <input type="tel" id="tel" name="tel">
+                        <input type="tel" id="tel" name="tel" required>
                     </label>
-                    <label>Organization
-                        <input type="text" name="businessName" id="businessName">
+                    <label>Organization Name
+                        <input type="text" name="businessName" id="businessName" required>
+                    </label>
+                    <label>Website
+                        <input type="url" name="website" id="url">
                     </label>
                     <label>Membership Level
                         <select name="level" id="level" required>
@@ -66,31 +69,24 @@
                     <label>
                         <input type="time" name="time" id="time" hidden>
                     </label>
-                    <input type="submit" value="">
+                    <!-- <input type="submit" value="Register" class="animations"> -->
+                    <button type="submit" class="animations">Register</button>
                 </fieldset>
             </form>
         </section>
+        <hr class="section-divider">
         <section id="section2">
             <h2>Membership Levels</h2>
             <div id="levelCards">
-                <div id="npml">
-                    <h3>Non Profit Membership Level</h3>
-                    <button>Learn More</button>
-                </div>
-                <div id="bml">
-                    <h3>Bronze Membership Level</h3>
-                    <button>Learn More</button>
-                </div>
-                <div id="sml">
-                    <h3>Silver Membership Level</h3>
-                    <button>Learn More</button>
-                </div>
-                <div id="gml">
-                    <h3>Gold Membership Level</h3>
-                    <button>Learn More</button>
-                </div>
             </div>
         </section>
+        <dialog id="levelDialog">
+            <div>
+                <h2>Sample Tittle</h2>
+                <button id="closeButton">X</button>
+                <p></p>
+            </div>
+        </dialog>
     </main>
     <footer>
         <div class="contact-info">

@@ -1,0 +1,49 @@
+{
+    "memberships": [
+        {
+            "name": "Non Profit",
+            "level": 0,
+            "price": 0,
+            "description": "For non-profit organizations looking to support the community and gain visibility.",
+            "benefits": [
+            "Website listing",
+            "Access to networking events",
+            "Newsletter mentions"
+            ]
+        },
+        {
+            "name": "Bronze",
+            "level": 1,
+            "price": 100,
+            "description": "Great for small businesses looking to grow their presence.",
+            "benefits": [
+            "All Non Profit benefits",
+            "Access to training",
+            "Event sponsorship opportunities"
+            ]
+        },
+        {
+            "name": "Silver",
+            "level": 2,
+            "price": 250,
+            "description": "Ideal for growing businesses seeking more engagement and exposure.",
+            "benefits": [
+            "All Bronze benefits",
+            "Home page spotlight",
+            "Priority booth placement at events"
+
+            ]
+        },
+        {
+            "name": "Gold",
+            "level": 3,
+            "price": 500,
+            "description": "Premium membership for businesses ready to lead and influence.",
+            "benefits": [
+            "All Silver benefits",
+            "Featured spot in monthly newsletter",
+            "Dedicated chamber liaison"
+            ]
+        }
+    ]
+}
