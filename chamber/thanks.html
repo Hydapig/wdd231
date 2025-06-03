@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Hyde | WDD 231 | Thanks from Hyrum Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 Thank you page for Hyrum chamber of commerce home page">
+    <meta name="author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thanks.css">
+    <script type="module" src="scripts/thanks.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Thanks for joining Hyrum Chamber of Commerce">
+    <meta property="og:description" content="Thanks for joining the Hyrum Chamber of Commerce">
+    <meta property="og:image" content="https://hydapig.github.io/wdd231/chamber/images/hyrum-chamber-logo.webp">
+    <meta property="og:url" content="https://hydapig.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <img src="images/hyrum-chamber-logo.webp" width="90" height="90" alt="Hyrum Chamber Logo" class="site-icon" loading="lazy">
+        <div><h1>Hyrum</h1><p>Chamber of Commerce</p></div>
+        <button id="menuButton" class="menu-button"></button>
+        <nav id="animateMenu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Thank you for Registering with the Hyrum Chamber of Commerce</h2>
+            <div id="results"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h3><strong>Hyrum Chamber of Commerce</strong></h3>
+            <p>55 E Main St</p>
+            <p>Hyrum, Utah 84319</p>
+            <p>contact@hcc.net</p>
+            <p>(435) 123-4567</p>
+        </div>
+        <div class="social-links">
+            <a href="https://youtube.com">
+                <img src="images/youtube-logo.webp" alt="youtube">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-64.jpeg" alt="X">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/circle-linkedin.webp" alt="linkedin">
+            </a>
+        </div>
+        <div class="dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Mike Hyde</p>
+            <p>&copy; <span id="year"></span> Hyrum Chamber of Commerce</p>
+            <p>last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
