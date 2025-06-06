@@ -74,12 +74,6 @@ h2, figcaption {
     color: var(--primary);
 }
 
-figure img {
-    width: 400px;
-    height: auto;
-    max-width: 600px;
-}
-
 .wireframe {
     background-color: var(--alt-background);
 }
