@@ -59,8 +59,15 @@ figure img {
 .wireframe div {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
+}
+
+.wireframe figure {
+    width: 400px;
+    height: 400px;
+    border: 2px solid var(--alt);
+    padding: 10px;
 }
 .wireframe img {
     width: 200px;
