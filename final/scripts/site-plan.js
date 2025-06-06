@@ -5,27 +5,29 @@ document.getElementById('year').innerHTML = year
 document.getElementById('lastModified').innerHTML = formattedDate
 
 document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll('.clickable-img');
   const overlay = document.getElementById('overlay');
   const overlayImg = document.getElementById('overlayImg');
   const closeBtn = document.getElementById('closeBtn');
 
-  images.forEach(img => {
+  document.querySelectorAll('.clickable-img').forEach(img => {
     img.addEventListener('click', () => {
       overlayImg.src = img.src;
       overlay.classList.remove('hidden');
     });
   });
 
-  closeBtn.addEventListener('click', () => {
+  const closeOverlay = () => {
     overlay.classList.add('hidden');
     overlayImg.src = '';
+  };
+
+  closeBtn.addEventListener('click', closeOverlay);
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeOverlay();
   });
 
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) {
-      overlay.classList.add('hidden');
-      overlayImg.src = '';
-    }
-  });
+  // Lightweight year/last modified updater
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
 });
+
