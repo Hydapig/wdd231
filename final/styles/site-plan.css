@@ -1,9 +1,12 @@
 :root {
-    --primary: #3ABEFF;
-    --secondary: #00F5D4;
-    --text: #0F0F0F;
-    --alt: #9E00FF;
-    --background: #CFCFCF;
+    /* --primary: #3ABEFF; */
+    --primary: #0096E0;
+    /* --secondary: #00F5D4; */
+    --background: #0F0F0F;
+    --alt-background: #292929;
+    --border: #9E00FF;
+    /* --text: #CFCFCF; */
+    --text: #858484;
 }
 
 body {
@@ -15,6 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--background);
 }
 
 header img {
@@ -29,15 +33,14 @@ main {
     margin: 0 auto;
     max-width: 1000px;
     padding: .5rem;
-    color: var(--text);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Funnel Display', sans-serif;
     text-align: center;
     font-size: large;
-    font-weight: 550;
+    /* font-weight: 550; */
 }
 
 .section-divider {
-    background-color: var(--alt);
+    background-color: var(--border);
     border: none;
     margin: 2rem auto;
     transition: all 0.3s ease;
@@ -45,10 +48,30 @@ main {
     width: 80%;
 }
 
-h1,h2, figcaption {
-    color: var(--text);
+section {
+    background-color: var(--text);
+    color: var(--background);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    /* font-weight: 100; */
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section p {
+    font-weight: 400;
+    text-shadow: none;
+}
+
+h1 {
+    color: var(--background);
     font-family: 'Press Start 2P', sans-serif;
     font-weight: 600;
+}
+
+h2, figcaption {
+    font-family: 'Audiowide', sans-serif;
+    color: var(--primary);
 }
 
 figure img {
@@ -56,17 +79,19 @@ figure img {
     max-width: 600px;
 }
 
+.wireframe {
+    background-color: var(--alt-background);
+}
+
 .wireframe div {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
+    display: grid;
     justify-content: center;
 }
 
 .wireframe figure {
-    width: 400px;
-    height: 400px;
-    border: 2px solid var(--alt);
+    /* width: 400px;
+    height: 400px; */
+    border: 2px solid var(--border);
     padding: 10px;
 }
 .wireframe img {
@@ -75,7 +100,8 @@ figure img {
 }
 
 header, footer {
-    background-color: var(--primary);
+    background: linear-gradient(45deg, var(--border), var(--primary));
+    color: var(--background);
     text-align: center;
     padding: 10px;
 }
@@ -84,26 +110,27 @@ header, footer {
     background-color: var(--primary);
 }
 
-.secondary {
-    background-color: var(--secondary);
-}
-
 .alt {
-    background-color: var(--alt);
+    background-color: var(--alt-background);
+    color: var(--text);
 }
 
 .text {
-    background-color: var(--text);
+    border: 2px solid var(--background);
     color: var(--background);
 }
 
 .background {
     background-color: var(--background);
-    border: 1px solid var(--text);
+    color: var(--text);
+}
+
+.border {
+    background-color: var(--border);
 }
 
 .color-schema {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
 }
 
