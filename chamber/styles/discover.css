@@ -143,14 +143,19 @@ footer {
 .social-links {
     display: flex;
     gap: 1rem;
+    width: 50px;
     justify-content: left;
     align-items: center;
     margin: 0 auto;
 }
 
-.social-links img {
-    width: 44px;
-    height: auto;
+.social-links a {
+    padding: 0;
+}
+
+.social-links a img {
+    width: auto;
+    height: 100px;
 }
 
 #visitMessage {
