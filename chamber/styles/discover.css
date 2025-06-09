@@ -106,6 +106,7 @@ nav {
     width: 100%;
     grid-column: 1 /-1;
     transition: grid-template-rows 0.5s ease-out;
+    overflow: hidden;
 }
 
 nav.open {
@@ -147,14 +148,6 @@ footer {
     align-items: center;
     margin: 0 auto;
 }
-
-/* .social-links a {
-    padding: 0;
-} */
-
-/* .social-links a img {
-    height: 100px;
-} */
 
 #visitMessage {
     text-align: center;
