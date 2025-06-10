@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DPS Podcast Site Plan</title>
+    <meta name="description" content="The DPS Podcast website">
+    <meta name="author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&family=Funnel+Display&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&family=Funnel+Display&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Audiowide&family=Funnel+Display&display=swap"></noscript>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/the-dps-podcast-logo-transparent.png" alt="The DPS Podcast Logo" width="80" height="80" loading="lazy"> 
+        <h1>The DPS Podcast</h1>
+        <button id="menuButton" class="menu-button"></button>
+    </header>
+    <nav id="animateMenu">
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="join.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>Welcome to The DPS Podcast</h2>
+            <div class="mainButtons">
+                <button>Join Our Community</button>
+                <button>About Us</button>
+            </div>
+        </section>
+        <section id="episodes">
+            <div class="episodes-header">
+                <h2>Episodes</h2>
+                <div class="custom-filter">
+                    <button id="filterToggle" aria-haspopup="listbox" aria-expanded="false">
+                        Filter ▾
+                    </button>
+                    <ul id="filterOptions" role="listbox" tabindex="-1" hidden>
+                        <li role="option" data-value="recent" class="selected">Most Recent</li>
+                        <li role="option" data-value="viewed">Most Viewed</li>
+                        <li role="option" data-value="liked">Most Liked</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <hr class="section-divider"> -->
+            <div id="episodes-grid"></div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+export const videos = [
+  {
+    "id": 1,
+    "name": "Mother, I Crave Violence",
+    "duration": "13:45",
+    "likes": 421,
+    "views": 1920,
+    "uploadDate": "2025-05-01",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 2,
+    "name": "My Life Is A Sim",
+    "duration": "28:19",
+    "likes": 627,
+    "views": 2513,
+    "uploadDate": "2025-05-08",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 3,
+    "name": "Scratching That Creative Itch",
+    "duration": "41:07",
+    "likes": 782,
+    "views": 3374,
+    "uploadDate": "2025-05-15",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 4,
+    "name": "Cheeky Fun For the Whole Family",
+    "duration": "39:11",
+    "likes": 365,
+    "views": 1460,
+    "uploadDate": "2025-05-22",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 5,
+    "name": "Kings of Retro",
+    "duration": "25:56",
+    "likes": 589,
+    "views": 2197,
+    "uploadDate": "2025-05-29",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 6,
+    "name": "I'm Batman",
+    "duration": "33:03",
+    "likes": 912,
+    "views": 4150,
+    "uploadDate": "2025-06-05",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 7,
+    "name": "Why Do People Like Assassin's Creed?",
+    "duration": "30:47",
+    "likes": 474,
+    "views": 1805,
+    "uploadDate": "2025-06-12",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 8,
+    "name": "Story Time",
+    "duration": "22:38",
+    "likes": 305,
+    "views": 1320,
+    "uploadDate": "2025-06-19",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 9,
+    "name": "Jump, Jump, and Jump Some More",
+    "duration": "28:52",
+    "likes": 368,
+    "views": 1493,
+    "uploadDate": "2025-06-26",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 10,
+    "name": "The Art of Headscratching",
+    "duration": "39:44",
+    "likes": 643,
+    "views": 2628,
+    "uploadDate": "2025-07-03",
+    "thumbnail": "podcast-thumbnail.webp",
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  }
+]

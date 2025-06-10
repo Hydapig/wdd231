@@ -1,0 +1,287 @@
+:root {
+    /* --primary: #3ABEFF; */
+    --primary: #0096E0;
+    /* --secondary: #00F5D4; */
+    --background: #0F0F0F;
+    --alt-background: #292929;
+    --border: #9E00FF;
+    /* --text: #CFCFCF; */
+    --text: #858484;
+    --text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+body {
+    background-color: var(--background);
+    /* margin: 0; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+}
+
+header h1 {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    /* float: left; */
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* padding: .5rem; */
+    font-family: 'Funnel Display', sans-serif;
+    text-align: center;
+}
+
+.intro {
+    margin-top: 10px;
+    padding: 5px;
+    /* border: 2px dashed var(--border);
+    border-radius: 20px; */
+}
+
+.intro h2 {
+    color: var(--primary);
+    font-family: "Audiowide", sans-serif;
+    font-size: xx-large;
+    text-shadow: var(--text-shadow);
+}
+
+.mainButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.mainButtons button {
+    background-color: var(--alt-background);
+    color: var(--border);
+    padding: .75rem;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+    font-size: x-large;
+    border-radius: 20px;
+}
+
+.mainButtons button:hover {
+    cursor: pointer;
+    color: var(--text);
+}
+
+#episodes {
+    background-color: var(--text);
+    /* max-width: 800px; */
+    /* padding: 1rem; */
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.episodes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    /* border-radius: 6px; */
+    /* border: 10px solid var(--text); */
+    background-color: var(--alt-background);
+    color: var(--primary);
+    
+}
+
+.episodes-header h2 {
+    font-size: xx-large;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: var(--text-shadow);
+}
+
+#episodes-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 2rem;    
+    padding: 1rem;
+}
+
+.episode-card {
+  position: relative;
+  text-decoration: none;
+  border: 5px solid var(--border);
+  border-radius: 10%;
+  overflow: hidden;
+  background-color: var(--alt-background);
+}
+
+.episode-card:hover
+
+.episode-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.episode-info {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: var(--primary);
+  font-size: 1.5rem;
+  text-shadow: var(--text-shadow);
+}
+
+.custom-filter {
+    position: relative;
+    display: inline-block;
+    font-family: inherit;
+}
+
+.custom-filter button {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.custom-filter ul {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--alt-background);
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.custom-filter ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.custom-filter ul li:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.custom-filter ul li.selected::before {
+    content: "✔ ";
+    color: var(--primary);
+}
+
+header, footer {
+    background: linear-gradient(45deg, var(--border), var(--primary));
+    color: var(--background);
+    text-align: center;
+    padding: 10px;
+    min-height: 80px;
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::before {
+    content: "X";
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 4vw;
+}
+
+ul.navigation {
+    list-style: none;
+    background-color: var(--alt-background);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation li, a {
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 100%;
+    grid-column: 1 /-1;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.navigation li.active a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+   #menuButton {
+        display: none;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        grid-column: auto;
+        position: static;
+        width: auto;
+        background-color: var(--alt-background);
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        background-color: var(--primary-color);
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    ul.navigation li,
+    ul.navigation a {
+        padding: 1rem 1.5rem;
+        text-align: left;
+    }
+}
+
