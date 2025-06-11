@@ -42,6 +42,10 @@ main {
     text-align: center;
 }
 
+.about {
+    border-radius: 20px;
+}
+
 .about h2 {
     font-size: xx-large;
     font-family: "Audiowide", sans-serif;
@@ -65,32 +69,14 @@ main {
     background-color: var(--alt-background);
 }
 
-#episodes-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    margin-top: 2rem;    
-    padding: 1rem;
+.section-divider {
+    background-color: var(--border);
+    border: none;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+    height: 2px;
+    width: 80%;
 }
-
-.episode-card {
-  position: relative;
-  text-decoration: none;
-  border: 5px solid var(--border);
-  border-radius: 10%;
-  overflow: hidden;
-  background-color: var(--alt-background);
-}
-
-.episode-card:hover
-
-.episode-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
 
 header, footer {
     background: linear-gradient(45deg, var(--border), var(--primary));
