@@ -35,14 +35,104 @@ header img {
 
 main {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1000px;
-    /* padding: .5rem; */
+    padding: .5rem;
     font-family: 'Funnel Display', sans-serif;
+    background-color: var(--text);
+    border-radius: 20px;
+    /* margin-top: 10px; */
+
+}
+
+.page-header {
     text-align: center;
 }
 
+.page-header h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size:xx-large;
+    color: var(--primary);
+    text-shadow: var(--text-shadow);
+}
 
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.connect fieldset {
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--alt-background);
+    color: var(--primary);
+    font-weight: 500;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.connect label {
+    display: block;
+    font-size: .9rem;
+    padding-top: .5rem;
+    margin-top: 10px;
+}
+
+.connect input[type="text"],
+.connect input[type="email"],
+.connect textarea {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border:  1px solid var(--background);
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.connect input[type="radio"] {
+    margin-right: 6px;
+}
+
+.connect button {
+    background-color: var(--alt-background);
+    border: none;
+    color: var(--border);
+    font-weight: bold;
+}
+
+.connect button:hover {
+    cursor: pointer;
+}
+
+.connect input:required {
+    border-left: solid 8px red;
+}
+
+.connect input:required:valid {
+    border-left: solid 8px green;
+}
+
+.connect input[type="submit"] {
+    border: none;
+    background-color: var(--background-color);
+    background-image: linear-gradient(var(--border), var(--primary));
+    color: var(--background);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1.5rem 0% 1rem 0%;
+    font-size: 1.5rem;
+}
+
+.connect input[type="submit"]:hover {
+    background-image: linear-gradient(var(--primary), var(--border));
+    /* color: var(--alt-background); */
+    cursor: pointer;
+}
 
 header, footer {
     background: linear-gradient(45deg, var(--border), var(--primary));
