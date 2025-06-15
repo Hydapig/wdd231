@@ -96,6 +96,10 @@ main {
     margin-right: 6px;
 }
 
+.connect input[type="radio"]:hover {
+    cursor: pointer;
+}
+
 .connect button {
     background-color: var(--alt-background);
     border: none;
@@ -132,6 +136,35 @@ main {
     background-image: linear-gradient(var(--primary), var(--border));
     /* color: var(--alt-background); */
     cursor: pointer;
+}
+
+dialog.modal {
+    border: none;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    background: var(--text);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: x-large;
+    align-items: left;
+}
+
+dialog button:hover {
+    cursor: pointer;
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 header, footer {

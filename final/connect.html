@@ -47,38 +47,38 @@
                     </label>
                     <label>How would you like to connect?</label>
                     <label>
-                        <input type="radio" name="connection" value="newsletter" checked>
+                        <input type="radio" name="connection" value="newsletter" id="newsletter" checked>
                         Newsletter
                         <button type="button" class="info-btn" data-type="newsletter">?</button>
                     </label>
                     <label>
-                        <input type="radio" name="connection" value="sponsorship">
+                        <input type="radio" name="connection" value="sponsorship" id="sponsor">
                         Sponsorship
                         <button type="button" class="info-btn" data-type="sponsorship">?</button>
                     </label>
                         <label>
-                        <input type="radio" name="connection" value="query">
-                        General Query
+                        <input type="radio" name="connection" value="query" id="query">
+                        General Inquery
                         <button type="button" class="info-btn" data-type="query">?</button>
                     </label>
                     <div id="sponsorshipFields" class="conditional hidden">
-                        <label>Company Name<input type="text" name="company"></label>
-                        <label>Title<input type="text" name="jobTitle"></label>
-                        <label>Type of Sponsorship<input type="text" name="sponsorshipType"></label>
+                        <label>Company Name<input type="text" name="company" placeholder="Your Company Name"></label>
+                        <label>Title<input type="text" name="jobTitle" placeholder="Senior Executive Assistant"></label>
+                        <label>Type of Sponsorship<input type="text" name="sponsorshipType" placeholder="How would you like to sponsor us?"></label>
                         <label>Additional Info<textarea name="sponsorshipDetails"></textarea>
                     </div>
-                    <div id="queryField" class="conditional hidden">
+                    <div id="queryField" class="conditional">
                         <textarea name="queryMessage" placeholder="Your Question"></textarea>
                     </div>
                     <input type="submit" value="Connect With Us">
                 </fieldset>
             </form>
         </section>
-        <dialog id="infoModal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p id="connectionDescription"></p>
+        <dialog id="infoModal" class="modal">
+            <div>
+                <button class="close">x</button>
             </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </dialog>
     </main>
     <footer>
