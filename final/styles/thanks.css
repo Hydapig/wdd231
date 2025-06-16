@@ -41,10 +41,27 @@ main {
     font-family: 'Funnel Display', sans-serif;
     background-color: var(--text);
     border-radius: 20px;
-    /* margin-top: 10px; */
-
 }
 
+.thanks h2 {
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    color: var(--primary);
+    text-shadow: var(--text-shadow);
+}
+
+.thanks {
+    padding: 1rem;
+}
+
+.section-divider {
+    background-color: var(--border);
+    border: none;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+    height: 2px;
+    width: 90%;
+}
 header, footer {
     background: linear-gradient(45deg, var(--border), var(--primary));
     color: var(--background);
