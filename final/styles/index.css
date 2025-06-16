@@ -195,6 +195,17 @@ header, footer {
     min-height: 80px;
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--background);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(1.5);
+}
+
 #menuButton::before {
     content: "☰";
 }
