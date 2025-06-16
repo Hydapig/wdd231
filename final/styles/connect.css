@@ -122,7 +122,9 @@ main {
 .connect input[type="submit"] {
     border: none;
     background-color: var(--background-color);
-    background-image: linear-gradient(var(--border), var(--primary));
+    background: linear-gradient(var(--border), var(--primary));
+    background-size: 100% 200%;
+    background-position: top;
     color: var(--background);
     border-radius: 6px;
     padding: .75rem;
@@ -130,11 +132,12 @@ main {
     max-width: 400px;
     margin: 1.5rem 0% 1rem 0%;
     font-size: 1.5rem;
+    transition: background-position 0.4s ease;
 }
 
 .connect input[type="submit"]:hover {
-    background-image: linear-gradient(var(--primary), var(--border));
-    /* color: var(--alt-background); */
+    /* background-image: linear-gradient(var(--primary), var(--border)); */
+    background-position: bottom; 
     cursor: pointer;
 }
 
@@ -144,9 +147,28 @@ dialog.modal {
     border-radius: 8px;
     width: 90%;
     max-width: 400px;
-    background: var(--text);
-
+    background: linear-gradient(
+        45deg,
+        var(--border),
+        var(--primary),
+        var(--border),
+        var(--primary)
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 17s linear infinite;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 dialog button {
@@ -165,6 +187,11 @@ dialog button:hover {
 
 ::backdrop {
   background: rgba(0, 0, 0, 0.6);
+}
+
+dialog p {
+    font-size: x-large;
+    color: var(--background);
 }
 
 header, footer {
