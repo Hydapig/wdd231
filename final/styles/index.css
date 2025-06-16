@@ -118,15 +118,22 @@ main {
 }
 
 .episode-card {
-  position: relative;
-  text-decoration: none;
-  border: 5px solid var(--border);
-  border-radius: 10%;
-  overflow: hidden;
-  background-color: var(--alt-background);
+    position: relative;
+    text-decoration: none;
+    border: 5px solid var(--border);
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: var(--alt-background);
+    box-sizing: border-box; 
+    transform: scale(1);
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
-.episode-card:hover
+.episode-card:hover {
+    border: 5px solid var(--primary); 
+    transform: scale(1);
+    outline: none;
+}
 
 .episode-card img {
   display: block;
@@ -227,7 +234,7 @@ ul.navigation {
     overflow: hidden;
 }
 
-.navigation li, a {
+.navigation li, .navigation a {
     padding: 1rem;
     text-align: center;
     color: var(--primary);
