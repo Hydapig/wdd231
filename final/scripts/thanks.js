@@ -10,7 +10,7 @@ const connectionType = userInfo.get('connection');
 if (connectionType === 'newsletter') {
     document.querySelector('#results').innerHTML = `
     <p><strong>${userInfo.get('fname')} ${userInfo.get('lname')}</strong>, you have signed up for the DPS Podcast newsletter. 
-    Check your ${userInfo.get('email')} inbox for your confirmation email. We're so excited 
+    Check your <strong>${userInfo.get('useremail')}</strong> inbox for your confirmation email. We're so excited 
     to have you as part of our community!</p>
     `
 } else if (connectionType === 'sponsorship') {
@@ -18,6 +18,7 @@ if (connectionType === 'newsletter') {
     <p>Thank you for wanting to partner with us! 
     We have received your email.
     Once we review your proposal, we will contact you as soon as possible!</p>
+    <hr class="section-divider">
     <h3>Your information</h3>
     <p><strong>Contact:</strong> ${userInfo.get('fname')} ${userInfo.get('lname')} - ${userInfo.get('jobTitle')}</p>
     <p><strong>Company:</strong> ${userInfo.get('company')}</p>
