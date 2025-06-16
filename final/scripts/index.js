@@ -16,15 +16,10 @@ filterToggle.addEventListener('click', () => {
 
 filterOptions.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI') {
-        // Remove previous selection
         document.querySelectorAll('#filterOptions li').forEach(li => li.classList.remove('selected'));
         e.target.classList.add('selected');
-
-        // Close dropdown
         filterOptions.hidden = true;
         filterToggle.setAttribute('aria-expanded', 'false');
-
-        // Optionally trigger sort/filter logic here:
         const selectedValue = e.target.dataset.value;
         console.log("Selected filter:", selectedValue);
     }
@@ -50,10 +45,10 @@ function renderEpisodes(data) {
 
 document.getElementById('filterOptions').addEventListener('click', e => {
   if (e.target.tagName === 'LI') {
-    const sortBy = e.target.dataset.value; // recent, viewed, liked
+    const sortBy = e.target.dataset.value;
     const sorted = [...videos].sort((a, b) => {
       if (sortBy === 'recent') return new Date(b.uploadDate) - new Date(a.uploadDate);
-      if (sortBy === 'viewed') return b.views - a.views; // If views present
+      if (sortBy === 'viewed') return b.views - a.views;
       if (sortBy === 'liked') return b.likes - a.likes;
       return 0;
     });
@@ -61,5 +56,5 @@ document.getElementById('filterOptions').addEventListener('click', e => {
   }
 });
 
-// Initial render using "Most Recent"
+
 renderEpisodes(videos);
