@@ -1,7 +1,9 @@
 import { footerData } from "../../chamber/scripts/footer.mjs";
 import { menuToggle } from "../../chamber/scripts/navigation.mjs";
+import { highlightActiveLink } from "./wayfinding.mjs";
 
 menuToggle();
+highlightActiveLink();
 footerData();
 
 function toggleFields() {

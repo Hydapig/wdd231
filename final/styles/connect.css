@@ -236,6 +236,10 @@ ul.navigation {
     text-decoration: underline;
 }
 
+.navigation a.active {
+  color: var(--text);
+}
+
 nav {
     display: grid;
     grid-template-rows: 0fr;
