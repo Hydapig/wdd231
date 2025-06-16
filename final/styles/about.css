@@ -78,6 +78,15 @@ main {
     width: 80%;
 }
 
+.host-profile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.host-profile figcaption {
+    color: var(--text);
+}
+
 header, footer {
     background: linear-gradient(45deg, var(--border), var(--primary));
     color: var(--background);
