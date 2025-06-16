@@ -1,18 +1,14 @@
 :root {
-    /* --primary: #3ABEFF; */
     --primary: #0096E0;
-    /* --secondary: #00F5D4; */
     --background: #0F0F0F;
     --alt-background: #292929;
     --border: #9E00FF;
-    /* --text: #CFCFCF; */
     --text: #858484;
     --text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 body {
     background-color: var(--background);
-    /* margin: 0; */
 }
 
 header {
@@ -30,14 +26,12 @@ header img {
     width: 100px;
     height: auto;
     object-fit: cover;
-    /* float: left; */
 }
 
 main {
     display: block;
     margin: 0 auto;
     max-width: 1000px;
-    /* padding: .5rem; */
     font-family: 'Funnel Display', sans-serif;
     text-align: center;
 }
@@ -45,8 +39,6 @@ main {
 .intro {
     margin-top: 10px;
     padding: 5px;
-    /* border: 2px dashed var(--border);
-    border-radius: 20px; */
 }
 
 .intro h2 {
@@ -85,8 +77,6 @@ main {
 
 #episodes {
     background-color: var(--text);
-    /* max-width: 800px; */
-    /* padding: 1rem; */
     margin: 2rem auto;
     border-radius: 20px;
     overflow: hidden;
@@ -97,8 +87,6 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    /* border-radius: 6px; */
-    /* border: 10px solid var(--text); */
     background-color: var(--alt-background);
     color: var(--primary);
     

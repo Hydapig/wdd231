@@ -1,18 +1,14 @@
 :root {
-    /* --primary: #3ABEFF; */
     --primary: #0096E0;
-    /* --secondary: #00F5D4; */
     --background: #0F0F0F;
     --alt-background: #292929;
     --border: #9E00FF;
-    /* --text: #CFCFCF; */
     --text: #858484;
     --text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 body {
     background-color: var(--background);
-    /* margin: 0; */
 }
 
 header {
@@ -30,7 +26,6 @@ header img {
     width: 100px;
     height: auto;
     object-fit: cover;
-    /* float: left; */
 }
 
 main {
